@@ -80,7 +80,7 @@ function eliminarCurso(e) {
     articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
     guardarCarrito();
     carritoHTML();
-    mostrarMensaje("Se eliminó un curso del carrito");
+    mostrarMensaje("Se eliminó un cubo del carrito");
   }
 }
 
@@ -127,3 +127,4 @@ function mostrarMensaje(mensaje) {
     contMensaje.classList.remove("mostrar");
   }, 2000);
 }
+
