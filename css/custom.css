@@ -580,3 +580,25 @@ header li img {
         font-size: 1.2rem;
     }
 }
+
+/* Navbar horizontal debajo de 1200px */
+@media screen and (max-width: 1200px) {
+    .navbar-container {
+        flex-direction: row; /* fila horizontal */
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: row; /* horizontal */
+        gap: 20px; /* separación entre links */
+        margin-top: 10px; /* opcional, si quieres un poquito de espacio */
+    }
+
+    .navbar-links a {
+        margin: 0; /* quitamos el margin-left original */
+        text-align: center;
+    }
+}
