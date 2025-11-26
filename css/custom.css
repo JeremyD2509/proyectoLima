@@ -602,3 +602,69 @@ header li img {
         text-align: center;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+*/
+/* --- AJUSTES PARA PANTALLAS DE MENOS DE 550px --- */
+@media (max-width: 550px) {
+
+    /* Fuerza 3 columnas de nuevo */
+    #lista-cursos .four.columns {
+        width: 30% !important;   /* 3 columnas */
+        margin-right: 3.333% !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Que no deje huecos (2-1-2-1) */
+    #lista-cursos .four.columns:nth-child(3n) {
+        margin-right: 0 !important;
+    }
+
+    /* Tarjetas más compactas */
+    #lista-cursos .card {
+        padding: 8px !important;
+    }
+
+    #lista-cursos .card h4 {
+        font-size: 13px !important;
+        line-height: 1.2;
+        min-height: 32px;
+    }
+
+    /* Imagen más pequeña y cuadrada */
+    #lista-cursos .card img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 110px !important;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    /* Precio más pequeño */
+    #lista-cursos .precio {
+        font-size: 13px !important;
+        margin-top: 5px !important;
+    }
+
+    /* Botón centrado, ABAJO del precio siempre */
+    #lista-cursos .card .u-full-width {
+        font-size: 12px !important;
+        padding: 6px !important;
+        margin-top: 6px !important;
+        width: 100% !important;
+        display: block !important;
+        text-align: center;
+    }
+}
