@@ -779,8 +779,8 @@ header li img {
         margin: 2px 0 !important;
     }
 
-    /* Precio del span (nuevo) → sin tachar y amarillo */
-    #lista-cursos .card .info-card > .precio > span {
+    /* Precio del span (nuevo) → sin tachado y amarillo */
+    #lista-cursos .card .info-card > .precio > span.u-pull-right {
         text-decoration: none !important;
         color: #ffd700 !important;
         font-weight: bold !important;
