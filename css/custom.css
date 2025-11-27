@@ -762,4 +762,25 @@ header li img {
         padding: 4px !important;
     }
 }
+/* --- FIX REAL PARA TU HTML (solo en pantallas <550px) --- */
+@media (max-width: 550px) {
+
+    /* El precio normal (fuera del span) → tachado y pequeño */
+    #lista-cursos .precio {
+        text-decoration: line-through;
+        color: #ff4444;
+        font-size: 11px !important;
+        margin: 2px 0 !important;
+    }
+
+    /* El precio del span (precio “nuevo”) → sin tachar, más fuerte */
+    #lista-cursos .precio span {
+        text-decoration: none !important;
+        color: #ffcc00 !important;
+        font-weight: bold !important;
+        font-size: 12px !important;
+        display: block !important;
+        margin-top: 2px !important;
+    }
+}
 
