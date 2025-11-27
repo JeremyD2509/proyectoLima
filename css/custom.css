@@ -679,3 +679,41 @@ header li img {
     }
 }
 
+
+
+/* --- ARREGLO DEFINITIVO PARA PRECIOS Y BOTÓN --- */
+@media (max-width: 550px) {
+
+    /* QUITAR float del precio que causa el choque */
+    #lista-cursos .precio span {
+        float: none !important;
+        display: block !important;
+        text-align: center !important;
+        margin-top: 2px !important;
+    }
+
+    /* Precio en UNA sola columna ordenadito */
+    #lista-cursos .precio {
+        display: block;
+        text-align: center !important;
+        width: 100% !important;
+        margin-bottom: 6px !important;
+    }
+
+    /* El botón NO SE ROMPE en varias líneas */
+    #lista-cursos .card .u-full-width {
+        white-space: nowrap !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px !important;
+        padding: 6px !important;
+        display: block !important;
+        text-align: center;
+    }
+
+    /* Para que haya espacio y ya no se monten */
+    #lista-cursos .info-card {
+        padding-bottom: 6px !important;
+    }
+}
+
