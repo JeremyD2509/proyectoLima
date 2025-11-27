@@ -616,55 +616,66 @@ header li img {
 
 
 
-*/
-/* --- AJUSTES PARA PANTALLAS DE MENOS DE 550px --- */
+*//* --- AJUSTES ULTRA COMPACTOS PARA PANTALLAS < 550px --- */
 @media (max-width: 550px) {
 
-    /* Fuerza 3 columnas de nuevo */
+    /* Mantener 3 columnas sí o sí */
     #lista-cursos .four.columns {
-        width: 30% !important;   /* 3 columnas */
+        width: 30% !important;
         margin-right: 3.333% !important;
-        margin-bottom: 15px !important;
+        margin-bottom: 10px !important;
     }
-
-    /* Que no deje huecos (2-1-2-1) */
     #lista-cursos .four.columns:nth-child(3n) {
         margin-right: 0 !important;
     }
 
-    /* Tarjetas más compactas */
+    /* Tarjeta compacta */
     #lista-cursos .card {
-        padding: 8px !important;
+        padding: 5px !important;
     }
 
+    /* Título más pequeño y pegado */
     #lista-cursos .card h4 {
-        font-size: 13px !important;
-        line-height: 1.2;
-        min-height: 32px;
+        font-size: 11px !important;
+        line-height: 1.15;
+        min-height: 28px;
+        margin-bottom: 4px !important;
     }
 
-    /* Imagen más pequeña y cuadrada */
+    /* Imagen más pequeña */
     #lista-cursos .card img {
         width: 100% !important;
-        height: auto !important;
-        max-height: 110px !important;
+        max-height: 95px !important;
         object-fit: cover;
         border-radius: 5px;
+        margin-bottom: 5px !important;
     }
 
-    /* Precio más pequeño */
+    /* Precio antes y ahora más pequeño */
     #lista-cursos .precio {
-        font-size: 13px !important;
-        margin-top: 5px !important;
+        font-size: 11px !important;
+        margin: 3px 0 !important;
     }
 
-    /* Botón centrado, ABAJO del precio siempre */
-    #lista-cursos .card .u-full-width {
+    #lista-cursos .precio span {
         font-size: 12px !important;
-        padding: 6px !important;
-        margin-top: 6px !important;
+        font-weight: bold;
+    }
+
+    /* Botón abajo SIEMPRE, más pequeño */
+    #lista-cursos .card .u-full-width {
+        font-size: 11px !important;
+        padding: 5px !important;
+        margin-top: 5px !important;
         width: 100% !important;
         display: block !important;
         text-align: center;
     }
+
+    /* Reducir TODA separación vertical entre elementos */
+    #lista-cursos .card > * {
+        margin-top: 3px !important;
+        margin-bottom: 3px !important;
+    }
 }
+
