@@ -762,9 +762,13 @@ header li img {
         padding: 4px !important;
     }
 }
+
+
+
+
+
 /* --- FIX REAL PARA TU HTML (solo en pantallas <550px) --- */
 @media (max-width: 550px) {
-
     /* El precio normal (fuera del span) → tachado y pequeño */
     #lista-cursos .precio {
         text-decoration: line-through;
@@ -783,12 +787,6 @@ header li img {
         margin-top: 2px !important;
     }
 }
-
-
-
-
-
-
 
 /* --- FIX SOLO TACHADO PARA <550px --- */
 @media (max-width: 550px) {
