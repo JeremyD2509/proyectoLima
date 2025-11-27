@@ -790,29 +790,15 @@ header li img {
 
 
 
-
-
-
-/* --- PRECIOS SOLO RESPONSIVE <550px --- */
+/* --- FIX SOLO TACHADO PARA <550px --- */
 @media (max-width: 550px) {
-
-    /* El precio principal (fuera del span) → NO tachado y amarillo */
+    /* Precio original → tachado */
     #lista-cursos .precio {
-        display: block !important;
         text-decoration: line-through !important;
-        color: #ff4d4d !important;
-        font-weight: bold !important;
-
-        margin-top: 2px !important;
-        text-align: center !important;
     }
 
-    /* El span dentro de precio → tachado y rojo suave */
+    /* Precio nuevo (span) → sin tachado */
     #lista-cursos .precio span {
-       text-decoration: none !important;
-
-        text-align: center;
-        margin: 2px 0 !important;
+        text-decoration: none !important;
     }
 }
-
