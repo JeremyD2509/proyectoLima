@@ -798,22 +798,21 @@ header li img {
 
     /* El precio principal (fuera del span) → NO tachado y amarillo */
     #lista-cursos .precio {
-        text-decoration: none !important;
-        color: #ffd700 !important; /* amarillo */
-        font-size: 11px !important;
-        text-align: center;
-        margin: 2px 0 !important;
-    }
-
-    /* El span dentro de precio → tachado y rojo suave */
-    #lista-cursos .precio span {
         display: block !important;
         text-decoration: line-through !important;
         color: #ff4d4d !important;
         font-weight: bold !important;
-        font-size: 12px !important;
+
         margin-top: 2px !important;
         text-align: center !important;
+    }
+
+    /* El span dentro de precio → tachado y rojo suave */
+    #lista-cursos .precio span {
+       text-decoration: none !important;
+
+        text-align: center;
+        margin: 2px 0 !important;
     }
 }
 
