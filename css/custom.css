@@ -658,10 +658,7 @@ header li img {
         margin: 3px 0 !important;
     }
 
-    #lista-cursos .precio span {
-        font-size: 12px !important;
-        font-weight: bold;
-    }
+   
 
     /* Botón abajo SIEMPRE, más pequeño */
     #lista-cursos .card .u-full-width {
@@ -685,13 +682,13 @@ header li img {
 /* --- ARREGLO DEFINITIVO PARA PRECIOS Y BOTÓN --- */
 @media (max-width: 550px) {
 
-    /* QUITAR float del precio que causa el choque */
-    #lista-cursos .precio span {
-        float: none !important;
-        display: block !important;
-        text-align: center !important;
-        margin-top: 2px !important;
-    }
+
+
+
+   
+
+   
+    
 
     /* Precio en UNA sola columna ordenadito */
     #lista-cursos .precio {
@@ -790,3 +787,31 @@ header li img {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+    #lista-cursos .card .info-card > .precio {
+        text-decoration: line-through !important;
+        color: #ff4444 !important;
+        font-size: 11px !important;
+        margin: 2px 0 !important;
+    }
+
+    #lista-cursos .card .info-card > .precio > span {
+        display: block !important;      /* rompe herencia */
+        text-decoration: none !important; /* elimina tachado */
+        color: #ffd700 !important;
+        font-weight: bold !important;
+        font-size: 12px !important;
+        margin: 2px 0 0 0 !important;
+        text-align: center !important;
+    }
+}
