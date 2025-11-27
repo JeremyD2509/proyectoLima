@@ -767,36 +767,25 @@ header li img {
 
 
 
-/* --- FIX REAL PARA TU HTML (solo en pantallas <550px) --- */
+
+
 @media (max-width: 550px) {
-    /* El precio normal (fuera del span) → tachado y pequeño */
-    #lista-cursos .precio {
-        text-decoration: line-through;
-        color: #ff4444;
+
+    /* Precio original → tachado y rojo */
+    #lista-cursos .card .info-card > .precio {
+        text-decoration: line-through !important;
+        color: #ff4444 !important;
         font-size: 11px !important;
         margin: 2px 0 !important;
     }
 
-    /* El precio del span (precio “nuevo”) → sin tachar, más fuerte */
-    #lista-cursos .precio span {
+    /* Precio del span (nuevo) → sin tachar y amarillo */
+    #lista-cursos .card .info-card > .precio > span {
         text-decoration: none !important;
-        color: #ffcc00 !important;
+        color: #ffd700 !important;
         font-weight: bold !important;
         font-size: 12px !important;
         display: block !important;
         margin-top: 2px !important;
-    }
-}
-
-/* --- FIX SOLO TACHADO PARA <550px --- */
-@media (max-width: 550px) {
-    /* Precio original → tachado */
-    #lista-cursos .precio {
-        text-decoration: line-through !important;
-    }
-
-    /* Precio nuevo (span) → sin tachado */
-    #lista-cursos .precio span {
-        text-decoration: none !important;
     }
 }
