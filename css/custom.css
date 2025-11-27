@@ -771,7 +771,7 @@ header li img {
 
 @media (max-width: 550px) {
 
-    /* Precio original → tachado y rojo */
+    /* Primer precio → tachado y rojo */
     #lista-cursos .card .info-card > .precio {
         text-decoration: line-through !important;
         color: #ff4444 !important;
@@ -779,13 +779,14 @@ header li img {
         margin: 2px 0 !important;
     }
 
-    /* Precio del span (nuevo) → sin tachado y amarillo */
-    #lista-cursos .card .info-card > .precio > span.u-pull-right {
+    /* Segundo precio (span) → sin tachado, amarillo */
+    #lista-cursos .card .info-card > .precio > span {
+        display: inline-block !important;
         text-decoration: none !important;
         color: #ffd700 !important;
         font-weight: bold !important;
         font-size: 12px !important;
-        display: block !important;
-        margin-top: 2px !important;
+        margin-left: 5px; /* opcional, separación */
     }
 }
+
